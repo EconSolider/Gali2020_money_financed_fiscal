@@ -8,6 +8,6 @@
 (Files end by "_steadystate.m" are steady state solvers for each model.)
 
 **Other files:**  
-Fun_a.m: a function to calibrate the money satiation level, i.e. "xbar".  
+Fun_a.m: a function to calibrate the money satiation level, i.e. "xbar"， which satisfies um/uc(xbar)=h(xbar)=0.  
 gali.pdf: a note of the whole model.  
 

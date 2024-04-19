@@ -1,0 +1,137 @@
+Starting Dynare (version 6.0).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ... 
+Found 25 equation(s). 
+Evaluating expressions... 
+Computing static model derivatives (order 1). 
+Normalizing the static model... 
+Normalization failed with cutoff, trying symbolic normalization... 
+Finding the optimal block decomposition of the static model... 
+5 block(s) found: 
+  4 recursive block(s) and 1 simultaneous block(s). 
+  the largest simultaneous block has 21 equation(s) 
+                                 and 21 feedback variable(s). 
+Computing dynamic model derivatives (order 1). 
+Normalizing the dynamic model... 
+Finding the optimal block decomposition of the dynamic model... 
+5 block(s) found: 
+  4 recursive block(s) and 1 simultaneous block(s). 
+  the largest simultaneous block has 21 equation(s) 
+                                 and 19 feedback variable(s). 
+Preprocessing completed. 
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+G      		 0
+b      		 1.05286
+R      		 1.00503
+pi     		 1
+T      		 0.00529075
+m      		 1.31607
+Tstar  		 0
+gm     		 1
+um     		 0.0894156
+uc     		 17.8831
+Z      		 1
+un     		 15.6903
+w      		 0.877383
+A      		 1
+mc     		 0.888889
+N      		 0.333333
+pistar 		 1
+x1     		 27.4817
+x2     		 30.9169
+pitile 		 1
+D      		 1
+Y      		 0.438691
+C      		 0.438691
+lamb   		 17.8831
+r      		 1.00503
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+               0                0                0
+       6.978e-17       -6.978e-17                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+          0.5463           0.5463                0
+            0.75             0.75                0
+               1                1                0
+           1.143            1.143                0
+            1.34             1.34                0
+           1.507            1.507                0
+       1.048e+17        1.048e+17                0
+       3.515e+17        3.515e+17                0
+             Inf              Inf                0
+
+There are 6 eigenvalue(s) larger than 1 in modulus for 6 forward-looking variable(s)
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         25
+  Number of stochastic shocks: 4
+  Number of state variables:   9
+  Number of jumpers:           6
+  Number of static variables:  12
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables        epsA      epsG      epsT      epsZ
+epsA         0.000000  0.000000  0.000000  0.000000
+epsG         0.000000  0.000000  0.000000  0.000000
+epsT         0.000000  0.000000  1.000000  0.000000
+epsZ         0.000000  0.000000  0.000000  0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   T               m               b               Y               C              pi               r              gm               N               R
+Constant                    0.005291        1.316074        1.052859        0.438691        0.438691        1.000000        1.005025        1.000000        0.333333        1.005025
+G(-1)                              0       -1.191174               0        0.434824       -0.065176        0.712306       -0.074713       -0.192791        0.440526        0.096419
+b(-1)                       0.020000        0.054039        1.000000       -0.004016       -0.004016       -0.029068        0.014508        0.011993       -0.004069       -0.006640
+R(-1)                              0        0.626451               0        0.040491        0.040491        0.179599       -0.147298        0.655599        0.041022       -0.048688
+m(-1)                              0        0.595000               0        0.038458        0.038458        0.170582       -0.139903       -0.137152        0.038962       -0.046244
+Tstar(-1)                   0.500000       -0.101469               0       -0.033092       -0.033092       -0.167857        0.101143       -0.244957       -0.033526       -0.000736
+A(-1)                              0        0.648082               0        0.049268        0.049268       -0.272966       -0.013251        0.219470       -0.172308       -0.047972
+D(-1)                              0       -1.098329               0       -0.107115       -0.107115        0.462606       -0.100065       -0.371944        0.224814        0.073625
+Z(-1)                              0       -0.240361               0        0.041981        0.041981        0.101238        0.020960       -0.081397        0.042532        0.037371
+epsA                               0        1.296164               0        0.098536        0.098536       -0.545932       -0.026502        0.438940       -0.344617       -0.095943
+epsG                               0       -1.045116               0        0.381507       -0.057184        0.624965       -0.065552       -0.169151        0.386510        0.084596
+epsT                       -0.438691        0.089028               0        0.029034        0.029034        0.147275       -0.088741        0.214921        0.029415        0.000646
+epsZ                               0       -0.480723               0        0.083962        0.083962        0.202476        0.041920       -0.162795        0.085063        0.074743
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+T                 NaN        NaN        NaN
+m                 NaN        NaN        NaN
+b                 NaN        NaN        NaN
+Y                 NaN        NaN        NaN
+C                 NaN        NaN        NaN
+pi                NaN        NaN        NaN
+r              1.0050     0.1143     0.0131
+gm                NaN        NaN        NaN
+N                 NaN        NaN        NaN
+R                 NaN        NaN        NaN
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+       epsA    epsG    epsT    epsZ
+r      0.00    0.00  100.00    0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables         r
+r            1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+r         0.6302  0.3862  0.2320  0.1372  0.0802
+Total computing time : 0h00m04s

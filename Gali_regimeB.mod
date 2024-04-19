@@ -10,23 +10,25 @@ epsA epsG epsT epsZ
 
 parameters
 bet psib delt alph ep xi iot chi xbar sigm ps ph G_Y b_Y m_Y
+thet
 ;
 
-G_Y=0.2;
-b_Y=1;
-m_Y=2;
-bet=0.96;
-psib=0.1; 
-delt=0.9;
-alph=0.35; 
-ep=8; 
-xi=0.5; 
+G_Y=0;
+b_Y=2.4;
+m_Y=3;
+bet=0.995;
+psib=0.02;
+delt=0.5;
+alph=0.25; 
+ep=9; 
+xi=0.75; 
 iot=0; 
-chi=0.1; 
+chi=0.0018; 
 xbar=0.1;  %recalibrate
-sigm=1;
+sigm=2.5;
 ps=0.1;    %recalibrate
-ph=0.5;    %inverse frich 
+ph=5;    %inverse frich 
+thet=3.5; %intertemporal substitution rate
 
 
 
@@ -50,7 +52,7 @@ m/m(-1)*pi=gm;
 %7
 um/uc=(R-1)/R;
 %8
-Z(+1)/Z*uc(+1)/uc=pi/bet/R;
+Z*uc=bet*Z(+1)*uc(+1)*R/pi;
 %9
 un/uc=w;
 %10
@@ -82,7 +84,7 @@ lamb=Z*uc;
 %22
 un=ps*N^ph;
 %23
-uc=1/C;
+uc=C^(-thet);
 %24
 um=chi*(m/C-xbar)^(-sigm)/C;
 %25

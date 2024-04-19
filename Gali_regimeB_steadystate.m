@@ -19,12 +19,12 @@ end
 %% Step 2: Enter model equations here
 pi=1; gm=1; pitile=1;
 D=1; pistar=1; 
-Y=1;
+N=1/3;
+Y=N^(1-alph);
 G=G_Y*Y;
 C=Y-G;
 R=1/bet;
-N=1/3;
-uc=1/C;
+uc=C^(-thet);
 m=m_Y*Y;
 um=(R-1)/R*uc;
 

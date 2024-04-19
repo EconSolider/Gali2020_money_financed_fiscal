@@ -1,4 +1,4 @@
-function [ys,params,check] = Gali_regimeA_steadystate(ys,exo,M_,options_)
+function [ys,params,check] = Gali_regimeA_ZLB_steadystate(ys,exo,M_,options_)
 % Inputs: 
 %   - ys        [vector] vector of initial values for the steady state of the endogenous variables
 %   - exo       [vector] vector of values for the exogenous variables
@@ -24,6 +24,7 @@ Y=N^(1-alph);
 G=G_Y*Y;
 C=Y-G;
 R=1/bet;
+
 uc=C^(-thet);
 m=m_Y*Y;
 um=(R-1)/R*uc;
